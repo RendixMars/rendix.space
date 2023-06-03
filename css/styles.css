@@ -39,7 +39,7 @@ body {
     width: 100%;
     position: relative;
     flex-direction: column;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .rectangle {
@@ -199,7 +199,7 @@ body {
 .arrow {
     display: inline-block;
     padding: 3px;
-    transition: transform 0.3s;
+    transition: transform 0.9s;
 }
 
 .rotate {
@@ -229,7 +229,7 @@ body {
     opacity: 0;
     margin-top: 20px;
     transform: translateX(-100%);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.7s ease-in-out, transform 1s ease-in-out;
     border-radius: 20px;
     border-color: #140027;
     border-width: 5px;
@@ -239,6 +239,7 @@ body {
 .rectangle-right.show {
     opacity: 1;
     transform: translateX(0);
+    
 }
 
 .move-left {
@@ -263,7 +264,7 @@ body {
     border-radius: 20px;
     margin-left: -20px;
     transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
     position: relative;
     right: -50px;
 }
