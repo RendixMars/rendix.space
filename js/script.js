@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const videoFiles = [
     "media/video1.mp4",
     "media/video2.mp4",
-    "media/video.mp4",
+    "media/video3.mp4",
     "media/video4.mp4",
   ];
 
