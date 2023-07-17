@@ -21,7 +21,7 @@ body {
     height: auto;
     overflow: hidden;
     z-index: -1;
-	transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1);
     filter: blur(17px);
 }
 
@@ -57,16 +57,16 @@ body {
     border-radius: 20px;
     border-color: #140027;
     border-width: 5px;
-    border-style:solid;
+    border-style: solid;
     z-index: 1;
-	margin: 10px;
+    margin: 10px;
 }
 
 .avatar {
-	width: 200px;
-	height: 200px;
-	border-radius: 1000px;
-	margin: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    margin: 0;
     display: flex;
 }
 
@@ -78,17 +78,32 @@ body {
 .nickname {
     font-family: "Roboto", sans-serif;
     color: white;
-	margin: 0;
-	margin-bottom: -10px;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+.discord-content{
+    margin: 0;
+    margin-top: -9%;
+    display: flex;
+    gap: 10px;
+    width: 100px;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.586));
+
 }
 
 .discord {
-    font-family: "Roboto", sans-serif;
     color: white;
-	margin: 0;
-	font-weight: normal;
-	margin-bottom: -10px;
-	margin-top: -25px;
+    /* font-family: "Roboto", sans-serif;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: -10px;
+    margin-top: -25px; */
+}
+
+.discord_icon{
+    width: 20px;
+    height: auto;
 }
 
 .content {
@@ -113,12 +128,14 @@ body {
         transform: scale(0);
         filter: blur(15px);
     }
+
     50% {
         top: 50%;
         left: 50%;
         transform: scale(1);
         filter: blur(15px);
     }
+
     100% {
         top: 100%;
         left: 100%;
@@ -131,6 +148,7 @@ body {
     color: white;
     font-size: 24px;
     margin-bottom: 20px;
+    filter: drop-shadow(2px 2px 0.6rem rgba(255, 255, 255, 0.466));
 }
 
 .social-links {
@@ -146,42 +164,42 @@ body {
 .social-links img {
     width: 32px;
     height: 32px;
-	transition: filter 0.2s ease-in-out;
+    transition: filter 0.2s ease-in-out;
     border-radius: 1000px;
 }
 
 .social-links img:hover {
-  filter: blur(2px);
+    filter: blur(2px);
 }
 
 .spotifyplayer {
-  width: 310px;
-  height: 110px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #02000a;
-  overflow: hidden;
-  position: relative;
-  border-radius: 20px;
-  z-index: 1;
+    width: 310px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #02000a;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
 }
 
 .spotifynow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .spotifynow img {
-  transform: scale(0.6);
-  border-radius: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
+    transform: scale(0.6);
+    border-radius: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .button {
@@ -233,13 +251,13 @@ body {
     border-radius: 20px;
     border-color: #140027;
     border-width: 5px;
-    border-style:solid;
+    border-style: solid;
 }
 
 .rectangle-right.show {
     opacity: 1;
     transform: translateX(0);
-    
+
 }
 
 .move-left {
@@ -337,13 +355,27 @@ body {
     left: 0px;
     margin: 0;
     border-radius: 20px;
-    
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.36));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 990px) {
 
-    body{
+    body {
         overflow-x: scroll;
     }
 
@@ -351,68 +383,66 @@ body {
         width: 1px;
         height: 12px;
     }
-    
+
     /* Track */
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 10px rgb(0, 0, 0); 
-        
+        box-shadow: inset 0 0 10px rgb(0, 0, 0);
+
     }
-     
+
     /* Handle */
     ::-webkit-scrollbar-thumb {
         background: linear-gradient(90deg, #527cee, #3c4de7, #4923d5, #7623d5);
-        filter:blur(40px);
+        filter: blur(40px);
         border-radius: 10px;
     }
-    
+
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(90deg, #6c93ff, #6978ff, #734ff3, #9b47fa);
-        filter:blur(40px);
+        filter: blur(40px);
         border-radius: 10px;
     }
 
 
-    .avatar{
+    .avatar {
         width: 170px;
         height: 170px;
     }
 
-    .rectangle-right{
+    .rectangle-right {
         width: 360px;
         height: 400px;
         margin-top: auto;
         margin-bottom: auto;
     }
 
-    .ayanami{
+    .ayanami {
         width: 230px;
         height: auto;
         border-radius: 20px;
     }
 
-    .spotifynow{
+    .spotifynow {
         display: none;
     }
 
-    .spotifyplayer{
+    .spotifyplayer {
         display: none;
     }
 
-    .rectangle{
+    .rectangle {
         width: 320px;
         height: 400px;
     }
 
-    .rectangle-button{
-        
-    }
+    .rectangle-button {}
 
-    .move-left{
+    .move-left {
         transform: translateX(-190px);
     }
 
-    .move-right{
+    .move-right {
         transform: translateX(380px);
     }
 
@@ -427,7 +457,7 @@ body {
         transform: translate(-50%, -50%) scale(1.1);
         filter: blur(17px);
     }
-    
+
     .background-video video {
         min-width: 100%;
         min-height: 100%;
@@ -437,8 +467,8 @@ body {
 
 @media screen and (min-width: 3800px) {
 
-    
-    body{
+
+    body {
         overflow-x: scroll;
     }
 
@@ -446,68 +476,66 @@ body {
         width: 1px;
         height: 12px;
     }
-    
+
     /* Track */
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 10px rgb(0, 0, 0); 
-        
+        box-shadow: inset 0 0 10px rgb(0, 0, 0);
+
     }
-     
+
     /* Handle */
     ::-webkit-scrollbar-thumb {
         background: linear-gradient(90deg, #527cee, #3c4de7, #4923d5, #7623d5);
-        filter:blur(40px);
+        filter: blur(40px);
         border-radius: 10px;
     }
-    
+
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(90deg, #6c93ff, #6978ff, #734ff3, #9b47fa);
-        filter:blur(40px);
+        filter: blur(40px);
         border-radius: 10px;
     }
 
 
-    .avatar{
+    .avatar {
         width: 170px;
         height: 170px;
     }
 
-    .rectangle-right{
+    .rectangle-right {
         width: 360px;
         height: 400px;
         margin-top: auto;
         margin-bottom: auto;
     }
 
-    .ayanami{
+    .ayanami {
         width: 230px;
         height: auto;
         border-radius: 20px;
     }
 
-    .spotifynow{
+    .spotifynow {
         display: none;
     }
 
-    .spotifyplayer{
+    .spotifyplayer {
         display: none;
     }
 
-    .rectangle{
+    .rectangle {
         width: 320px;
         height: 400px;
     }
 
-    .rectangle-button{
-        
-    }
+    .rectangle-button {}
 
-    .move-left{
+    .move-left {
         transform: translateX(-190px);
     }
 
-    .move-right{
+    .move-right {
         transform: translateX(380px);
     }
 
@@ -522,7 +550,7 @@ body {
         transform: translate(-50%, -50%) scale(1.1);
         filter: blur(17px);
     }
-    
+
     .background-video video {
         min-width: 100%;
         min-height: 100%;
